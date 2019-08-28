@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Smoke" duration-ms="105048" started-at="2018-06-15T05:32:12Z" finished-at="2018-06-15T05:33:57Z">
+    <groups>
+    </groups>
+    <test name="Verify whether user is able to view first 10 branches in descending order" duration-ms="105048" started-at="2018-06-15T05:32:12Z" finished-at="2018-06-15T05:33:57Z">
+      <class name="org.ejagruti.investcorp.modules.ViewandValidateData">
+        <test-method status="PASS" signature="execute(java.lang.String)[pri:0, instance:org.ejagruti.investcorp.modules.ViewandValidateData@3bfdc050]" name="execute" duration-ms="4" started-at="2018-06-15T11:03:57Z" description="View and Validate functionality" finished-at="2018-06-15T11:03:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[query=SELECT id FROM branches ORDER BY id DESC LIMIT 0#10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+      </class> <!-- org.ejagruti.investcorp.modules.ViewandValidateData -->
+      <class name="org.ejagruti.investcorp.modules.Navigation">
+        <test-method status="PASS" signature="execute(java.lang.String)[pri:0, instance:org.ejagruti.investcorp.modules.Navigation@42d80b78]" name="execute" duration-ms="12972" started-at="2018-06-15T11:03:44Z" description="Navigation functionality" finished-at="2018-06-15T11:03:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[menu=View/Edit,submenu=Branches]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+      </class> <!-- org.ejagruti.investcorp.modules.Navigation -->
+      <class name="org.ejagruti.investcorp.modules.AdminLogin">
+        <test-method status="PASS" signature="execute(java.lang.String)[pri:0, instance:org.ejagruti.investcorp.modules.AdminLogin@1e88b3c]" name="execute" duration-ms="18613" started-at="2018-06-15T11:03:25Z" description="AdminLogin functionality" finished-at="2018-06-15T11:03:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[language=english,username=superadmin,password=passw0rd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+      </class> <!-- org.ejagruti.investcorp.modules.AdminLogin -->
+      <class name="org.ejagruti.investcorp.modules.LaunchApp">
+        <test-method status="PASS" signature="execute(java.lang.String)[pri:0, instance:org.ejagruti.investcorp.modules.LaunchApp@3e6fa38a]" name="execute" duration-ms="67282" started-at="2018-06-15T11:02:12Z" description="LaunchApp functionality" finished-at="2018-06-15T11:03:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[browser=firefox,url=http://localhost:1979/investcorp1/mainpage/index.html,remote=n,hubipaddress=localhost]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- execute -->
+      </class> <!-- org.ejagruti.investcorp.modules.LaunchApp -->
+    </test> <!-- Verify whether user is able to view first 10 branches in descending order -->
+  </suite> <!-- Smoke -->
+</testng-results>

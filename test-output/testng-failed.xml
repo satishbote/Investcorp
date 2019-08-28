@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Smoke]">
+  <parameter name="owner" value="Satish"/>
+  <parameter name="Navigation" value="menu=View/Edit,submenu=Branches"/>
+  <parameter name="ViewandValidateData" value="query=SELECT id FROM branches ORDER BY id DESC LIMIT 0#10"/>
+  <parameter name="LaunchApp" value="browser=firefox,url=http://localhost:1979/investcorp1/mainpage/index.html,remote=n,hubipaddress=localhost"/>
+  <parameter name="creation_date" value="09/08/2017"/>
+  <parameter name="tcid" value="3"/>
+  <parameter name="execute" value="y"/>
+  <parameter name="AdminLogin" value="language=english,username=superadmin,password=passw0rd"/>
+  <parameter name="usid" value="US-GMPS-S2R2"/>
+  <listeners>
+    <listener class-name="org.ejagruti.investcorp.listeners.TestSuiteListener"/>
+    <listener class-name="org.ejagruti.investcorp.listeners.TestCaseListener"/>
+  </listeners>
+  <test name="Verify whether user is able to view first 10 branches in descending order">
+    <parameter name="owner" value="Satish"/>
+    <parameter name="Navigation" value="menu=View/Edit,submenu=Branches"/>
+    <parameter name="ViewandValidateData" value="query=SELECT id FROM branches ORDER BY id DESC LIMIT 0#10"/>
+    <parameter name="LaunchApp" value="browser=firefox,url=http://localhost:1979/investcorp1/mainpage/index.html,remote=n,hubipaddress=localhost"/>
+    <parameter name="creation_date" value="09/08/2017"/>
+    <parameter name="tcid" value="3"/>
+    <parameter name="execute" value="y"/>
+    <parameter name="AdminLogin" value="language=english,username=superadmin,password=passw0rd"/>
+    <parameter name="usid" value="US-GMPS-S2R2"/>
+    <classes>
+      <class name="org.ejagruti.investcorp.modules.LaunchApp"/>
+      <class name="org.ejagruti.investcorp.modules.AdminLogin"/>
+      <class name="org.ejagruti.investcorp.modules.Navigation"/>
+      <class name="org.ejagruti.investcorp.modules.ViewandValidateData"/>
+    </classes>
+  </test> <!-- Verify whether user is able to view first 10 branches in descending order -->
+</suite> <!-- Failed suite [Smoke] -->
